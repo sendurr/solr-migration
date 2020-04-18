@@ -16,7 +16,7 @@ else
     echo "output file present"
 fi
 array=(`find  ./ -type f -name '*.json'`)
-for json in ${array[*]}
-do echo $json
-jq -s . ${array[*]} > $outputFile
+#for json in ${array[*]}
+#do echo $json
+jq -s '.[][]' ${array[*]} > $outputFile
 done
