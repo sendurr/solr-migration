@@ -1,0 +1,20 @@
+[
+	{
+		"docType": "header",
+		"planID": "ALL",
+		"language": "en",
+		"state": "ALL",
+		"issuer": "DELTA",
+		"productType": "ALL",
+		"content": "header test for DELTA shopping all states"
+	},
+	{
+		"docType": "footer",
+		"planID": "ALL",
+		"language": "en",
+		"state": "ALL",
+		"issuer": "DELTA",
+		"productType": "ALL",
+		"content": "footer test for DELTA shopping all states"
+	}
+]
