@@ -1,0 +1,20 @@
+[
+	{
+		"docType": "header",
+		"planID": "ALL",
+		"language": "en",
+		"state": "ALL",
+		"issuer": "AARP",
+		"productType": "ALL",
+		"content": "header test for AARP shopping all states"
+	},
+	{
+		"docType": "footer",
+		"planID": "ALL",
+		"language": "en",
+		"state": "ALL",
+		"issuer": "AARP",
+		"productType": "ALL",
+		"content": "footer test for AARP shopping all states"
+	}
+]

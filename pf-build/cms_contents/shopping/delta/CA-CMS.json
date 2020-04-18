@@ -1,0 +1,20 @@
+[
+	{
+		"docType": "banner",
+		"planID": "ALL",
+		"language": "en",
+		"state": "CA",
+		"issuer": "DELTA",
+		"productType": "ALL",
+		"content": "banner test for DELTA shopping all states"
+	},
+	{
+		"docType": "item text",
+		"planID": "ALL",
+		"language": "en",
+		"state": "CA",
+		"issuer": "DELTA",
+		"productType": "ALL",
+		"content": "banner test for DELTA shopping all states"
+	}
+]
