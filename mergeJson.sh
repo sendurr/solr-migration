@@ -6,10 +6,11 @@
 #  Created by Sendurr Selvaraj on 4/17/20.
 #
 outputFile="mergedfile.json"
-checkOutputFile=`find  . -type f -name $outputFile`
+jsonDirectory="."
+checkOutputFile=`find  $jsonDirectory -type f -name $outputFile`
 if [ -z $checkOutputFile ]
 then
-    echo "output file already deleted"
+    echo "Verified - output file already deleted"
 else
     rm -f $checkOutputFile
     echo "output file present"
@@ -17,4 +18,5 @@ fi
 array=(`find  ./ -type f -name '*.json'`)
 for json in ${array[*]}
 do echo $json
+jq -s . ${array[*]} > $outputFile
 done
