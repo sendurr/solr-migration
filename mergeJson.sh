@@ -5,6 +5,7 @@
 #
 #  Created by Sendurr Selvaraj on 4/17/20.
 #
+echo "========= starting merging json files ========="
 outputFile="mergedfile.json"
 jsonDirectory="."
 checkOutputFile=`find  $jsonDirectory -type f -name $outputFile`
@@ -13,10 +14,11 @@ then
     echo "Verified - output file already deleted"
 else
     rm -f $checkOutputFile
-    echo "output file present"
+    echo "output file present -- deleting"
 fi
 array=(`find  ./ -type f -name '*.json'`)
 #for json in ${array[*]}
 #do echo $json
 jq -s '.[][]' ${array[*]} > $outputFile
-done
+echo "json exported to "$outputFile
+echo "========= complete merging json files ========="
