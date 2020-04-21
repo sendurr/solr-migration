@@ -5,6 +5,7 @@
 #
 #  Created by Sendurr Selvaraj on 4/17/20.
 #
+echo "========= starting merging json files ========="
 outputFile="mergedfile.json"
 jsonDirectory="."
 checkOutputFile=`find  $jsonDirectory -type f -name $outputFile`
@@ -19,3 +20,5 @@ array=(`find  ./ -type f -name '*.json'`)
 #for json in ${array[*]}
 #do echo $json
 jq -s '.[][]' ${array[*]} > $outputFile
+echo "json exported to "$outputFile
+echo "========= complete merging json files ========="
