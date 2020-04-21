@@ -13,10 +13,9 @@ then
     echo "Verified - output file already deleted"
 else
     rm -f $checkOutputFile
-    echo "output file present"
+    echo "output file present -- deleting"
 fi
 array=(`find  ./ -type f -name '*.json'`)
 #for json in ${array[*]}
 #do echo $json
 jq -s '.[][]' ${array[*]} > $outputFile
-done
