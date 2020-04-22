@@ -6,9 +6,9 @@
 #  Created by Sendurr Selvaraj on 4/20/20.
 #
 echo "========= starting rollback of docs ========="
-solrUrl="https://aw-lx0636:8984/solr/"
+solrUrl="http//localhost:8983/solr/"
 collection="cms_collection"
-authentication="-ku solr:SolrRocks"
+authentication="-ku x:xxx"
 backupFile="backUpcms_collection.json"
 solrGetAllurl=${solrUrl}${collection}"/select?q=*:*"
 echo "Triggering -- "$solrGetAllurl
