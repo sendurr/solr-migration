@@ -6,7 +6,7 @@
 #  Created by Sendurr Selvaraj on 4/17/20.
 #
 echo "========= starting merging json files ========="
-outputFile="mergedfile.json"
+outputFile="gitCMS.json"
 jsonDirectory="."
 checkOutputFile=`find  $jsonDirectory -type f -name $outputFile`
 if [ -z $checkOutputFile ]
