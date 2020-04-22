@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#  backupSolr.sh
+#  deleteAllDocs.sh
 #
 #
 #  Created by Sendurr Selvaraj on 4/20/20.
