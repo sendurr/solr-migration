@@ -19,6 +19,6 @@ fi
 array=(`find  ./ -type f -name '*.json'`)
 #for json in ${array[*]}
 #do echo $json
-jq -s '.[][]' ${array[*]} > $outputFile
+jq -s '[.[][]]' ${array[*]} > $outputFile
 echo "json exported to "$outputFile
 echo "========= complete merging json files ========="
